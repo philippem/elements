@@ -5,7 +5,7 @@ ifneq ($(doCheck), 1)
 CPPFLAGS := $(CPPFLAGS) -DNDEBUG
 endif
 
-CFLAGS := -I include
+CFLAGS := -I include $(LIBSIMPLICITY_INCLUDES)
 
 LDLIBS := -lsha256compression
 
